@@ -1,0 +1,34 @@
+[project]
+name = "upgaming"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Nestor-Dzadzamia", email = "ndzad22@freeuni.edu.ge" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.162.0",
+    "matplotlib>=3.11.2",
+    "numpy>=2.5.4",
+    "opencv-python-headless>=5.0.0.93",
+    "pandas>=3.1.0",
+    "python-multipart>=0.0.32",
+    "scikit-learn>=1.9.1",
+    "torch>=2.14.1",
+    "torchvision>=0.29.1",
+    "uvicorn>=0.54.0",
+    "wandb>=0.31.0",
+]
+
+[project.scripts]
+upgaming = "upgaming:main"
+
+[build-system]
+requires = ["uv_build>=0.12.1,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.4.0",
+]
