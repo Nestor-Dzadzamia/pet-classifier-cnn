@@ -14,3 +14,4 @@ data/
 wandb/
 .ipynb_checkpoints/
 .DS_Store
+.idea/
